@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Shopping Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Online Shopping System</h1>
+
+  <div class="container">
+    <section>
+      <h2>Customers</h2>
+      <table id="customerTable">
+        <thead>
+          <tr>
+            <th>ID</th><th>Name</th><th>Email</th><th>Phone</th><th>Address</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Add New Customer</h2>
+      <form id="addCustomerForm">
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="text" id="phone" placeholder="Phone" />
+        <input type="text" id="address" placeholder="Address" />
+        <button type="submit">Add Customer</button>
+      </form>
+    </section>
+
+    <section>
+  <h2>Products</h2>
+
+  <!-- Product Table -->
+  <table id="productTable">
+    <thead>
+      <tr>
+        <th>ID</th><th>Name</th><th>Description</th><th>Price (₹)</th><th>Stock</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <!-- Add Product Form -->
+  <h3>Add New Product</h3>
+  <form id="addProductForm">
+    <input type="text" id="pname" placeholder="Product Name" required />
+    <input type="text" id="pdesc" placeholder="Description" />
+    <input type="number" id="pprice" placeholder="Price (₹)" required />
+    <input type="number" id="pstock" placeholder="Stock Quantity" required />
+    <button type="submit">Add Product</button>
+  </form>
+</section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
